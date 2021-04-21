@@ -4,6 +4,9 @@ import Organ from "./Organ";
 import organs from "../../data/inner_body.json";
 
 const Body = () => {
+  //let w = window.innerWidth;
+  // let h = window.innerHeight;
+
   return (
     <div className="Body">
       <svg
@@ -11,11 +14,11 @@ const Body = () => {
         xmlns="http://www.w3.org/2000/svg"
         width="90vw"
         height="90vh"
-        viewBox="0 0 485 509"
+        viewBox="0 0 485 600"
       >
         <g id="regions">
           {organs.map((organ) => (
-            <Organ {...organ} />
+            <Organ key={organ.id} {...organ} />
           ))}
         </g>
       </svg>
