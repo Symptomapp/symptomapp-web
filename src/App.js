@@ -1,10 +1,13 @@
-import './App.css';
-import Body from "./components/anatomy/Body"
+import "./App.css";
+import Body from "./components/anatomy/Body";
+import innerOrgans from "./data/inner_body.json";
+import outterOrgans from "./data/outter_body.json";
 
 function App() {
   return (
     <div className="App">
-     <Body />
+      <Body organs={innerOrgans} />
+      <Body organs={outterOrgans} />
     </div>
   );
 }

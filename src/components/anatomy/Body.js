@@ -1,9 +1,8 @@
 import React from "react";
 import "./Body.css";
 import Organ from "./Organ";
-import organs from "../../data/inner_body.json";
 
-const Body = () => {
+const Body = (props) => {
   //let w = window.innerWidth;
   // let h = window.innerHeight;
 
@@ -17,7 +16,7 @@ const Body = () => {
         viewBox="0 0 485 600"
       >
         <g id="regions">
-          {organs.map((organ) => (
+          {props.organs.map((organ) => (
             <Organ key={organ.id} {...organ} />
           ))}
         </g>
