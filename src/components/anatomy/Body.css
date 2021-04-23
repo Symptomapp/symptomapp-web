@@ -21,6 +21,9 @@ path:hover {
   z-index: 100;
 }
 
+circle {
+  z-index: 100;
+}
 
 /* @media screen and (max-width: 320px) {
   #anawrapper svg {

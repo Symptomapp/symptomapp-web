@@ -7,20 +7,40 @@ const Body = (props) => {
   // let h = window.innerHeight;
 
   return (
-    <div className="Body">
-      <svg
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-        width="90vw"
-        height="90vh"
-        viewBox="0 0 485 600"
-      >
-        <g id="regions">
-          {props.organs.map((organ) => (
-            <Organ key={organ.id} {...organ} />
-          ))}
-        </g>
-      </svg>
+    <div className="Body container mt-4">
+      <div className="row">
+        <div className="col-sm-6">
+          <svg
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            width="90vw"
+            height="90vh"
+            viewBox="0 0 485 600"
+          >
+            <g id="regions">
+              {props.organs.map((organ) => (
+                <Organ key={organ.id} {...organ} />
+              ))}
+            </g>
+          </svg>
+        </div>
+        <div className="col-sm-6 d-flex text-center justify-content-center align-items-center">
+          <div className="card" style={{ width: "100%" }}>
+            <div
+              className="card-header"
+              style={{ backgroundColor: "chartreuse" }}
+            >
+              Featured
+            </div>
+            <ul className="list-group list-group-flush">
+              <li className="list-group-item">An item</li>
+              <li className="list-group-item">A second item</li>
+              <li className="list-group-item">A third item</li>
+              <li className="list-group-item">More</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

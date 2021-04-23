@@ -23,11 +23,10 @@ const Organ = ({
 
     setState((state) => ({
       ...state,
-      x: e.clientX - e.nativeEvent.offsetX * 0.5,
-      y: e.clientY - e.nativeEvent.offsetY * 0.5,
+      x: e.clientX - e.nativeEvent.offsetX * 0.1,
+      y: e.clientY - e.nativeEvent.offsetY * 0.4,
     }));
     setinOrgan(true);
-    console.log({ name });
   };
 
   const handleMouseLeave = (e) => {
