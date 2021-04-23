@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Body.css";
 import Organ from "./Organ";
 
 const Body = (props) => {
   //let w = window.innerWidth;
-  // let h = window.innerHeight;
+  //let h = window.innerHeight;
+  const [organName, setOrganName] = useState("SELECT BODY PART");
+  const [bgColor, setBgColor] = useState("gray");
+
+  handleInputChange = (e) => {
+    const name = e.target.name;
+    setOrganName(name);
+  };
 
   return (
     <div className="Body container mt-4">
@@ -19,7 +26,11 @@ const Body = (props) => {
           >
             <g id="regions">
               {props.organs.map((organ) => (
-                <Organ key={organ.id} {...organ} />
+                <Organ
+                  key={organ.id}
+                  {...organ}
+                  handleInputChange={(e) => handleInputChange(e)}
+                />
               ))}
             </g>
           </svg>
@@ -28,9 +39,9 @@ const Body = (props) => {
           <div className="card" style={{ width: "100%" }}>
             <div
               className="card-header"
-              style={{ backgroundColor: "chartreuse" }}
+              style={{ backgroundColor: { bgColor } }}
             >
-              Featured
+              {organName}
             </div>
             <ul className="list-group list-group-flush">
               <li className="list-group-item">An item</li>

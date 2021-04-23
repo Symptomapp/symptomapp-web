@@ -10,6 +10,7 @@ const Organ = ({
   fillOpacity,
   strokeOpacity,
   cursor,
+  handleInputChange,
 }) => {
   //   let w = window.innerWidth;
   //   let h = window.innerHeight;
@@ -43,6 +44,7 @@ const Organ = ({
       <path
         className={name}
         onMouseMove={handleMouseMove}
+        onMouseMove={handleInputChange}
         onMouseLeave={handleMouseLeave}
         onClick={handleOnClick}
         id={id}
