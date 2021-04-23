@@ -44,9 +44,8 @@ const Organ = ({
       <path
         className={name}
         onMouseMove={handleMouseMove}
-        onMouseMove={handleInputChange}
         onMouseLeave={handleMouseLeave}
-        onClick={handleOnClick}
+        onClick={handleInputChange}
         id={id}
         name={name}
         vectorEffect={vectorEffect}

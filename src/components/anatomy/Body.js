@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Body.css";
 import Organ from "./Organ";
 
@@ -6,11 +6,15 @@ const Body = (props) => {
   //let w = window.innerWidth;
   //let h = window.innerHeight;
   const [organName, setOrganName] = useState("SELECT BODY PART");
-  const [bgColor, setBgColor] = useState("gray");
+  const [bgColor, setBgColor] = useState("red");
 
-  handleInputChange = (e) => {
-    const name = e.target.name;
+
+  const handleInputChange = (e) => {
+    const name = e.target.attributes.name.value;
+    const fill = e.target.attributes.fill.value;
+    
     setOrganName(name);
+    setBgColor(fill)
   };
 
   return (
@@ -39,7 +43,7 @@ const Body = (props) => {
           <div className="card" style={{ width: "100%" }}>
             <div
               className="card-header"
-              style={{ backgroundColor: { bgColor } }}
+              style={{ backgroundColor: bgColor, opacity: 0.5 }}
             >
               {organName}
             </div>
