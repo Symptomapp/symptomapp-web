@@ -7,7 +7,7 @@ import face from "./data/face.json";
 function App() {
   return (
     <div className="App">
-      <Body organs={innerOrgans} />
+      <Body organs={face}/>
       {/* <Body organs={outterOrgans} /> */}
     </div>
   );

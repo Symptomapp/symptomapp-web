@@ -10,7 +10,7 @@ const Organ = ({
   fillOpacity,
   strokeOpacity,
   cursor,
-  handleInputChange,
+  handleInputChange
 }) => {
   //   let w = window.innerWidth;
   //   let h = window.innerHeight;
@@ -24,8 +24,8 @@ const Organ = ({
 
     setState((state) => ({
       ...state,
-      x: e.clientX - e.nativeEvent.offsetX * 0.1,
-      y: e.clientY - e.nativeEvent.offsetY * 0.4,
+      x: e.clientX + e.clientX * 0.4,
+      y: e.clientY + e.clientY * 0.4,
     }));
     setinOrgan(true);
   };
