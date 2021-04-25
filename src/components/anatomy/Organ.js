@@ -24,8 +24,8 @@ const Organ = ({
 
     setState((state) => ({
       ...state,
-      x: e.clientX + e.clientX * 0.4,
-      y: e.clientY + e.clientY * 0.4,
+      x: e.clientX - e.clientX * 0.5,
+      y: e.clientY - e.clientY * 0.5,
     }));
     setinOrgan(true);
   };

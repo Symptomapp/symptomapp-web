@@ -14,7 +14,7 @@ const Body = ({organs}) => {
   const ref = useRef(null);
 
   useEffect(() => {
-    organs.some((element) => element.name === 'Chest' ? setOuter(true) : setOuter(false))
+    organs.some((element) => element.name === 'Chest') ? setOuter(true) : setOuter(false)
   }, [organs])
 
   useEffect(() => {
@@ -44,7 +44,7 @@ const Body = ({organs}) => {
             viewBox={`0 0 ${ h * 0.9} ${w * 0.9}`}
           >
             <g className="organ_group" transform={`scale(${isOuter ? 0.9 : 2})`} >
-              <g className="organ_subgroup" transform={`translate(${isOuter ? (currentWidth,currentHeight) : (0,0)})`} >
+              <g className="organ_subgroup" transform={`translate(${isOuter ? `${currentWidth},${currentHeight}` : "0,0"})`} >
                 {organs.map((organ) => (
                   <Organ
                     key={organ.id}
