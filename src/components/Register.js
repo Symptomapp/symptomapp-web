@@ -15,7 +15,7 @@ const Register = () => {
       age: "",
       sex: "",
       city: "",
-      picture: "",
+      picture: "https://miro.medium.com/max/3150/1*NFwzjjur2atssvIlGia0AQ.jpeg",
     },
     message: "",
   })
@@ -92,13 +92,13 @@ const Register = () => {
 
                 <Form.Group controlId="formGridPicture">
                     <Form.Label>Picture</Form.Label>
-                    <Form.Control type="url" placeholder="http://www..." name="picture" value={data.picture} onChange={handleChange} autoComplete="photo" required/>
+                    <Form.Control type="url" placeholder="http://www..." name="picture" value={data.picture} onChange={handleChange} autoComplete="photo"/>
                 </Form.Group>
 
                 <Form.Row>
                     <Form.Group as={Col} controlId="formGridAge">
                     <Form.Label>Age</Form.Label>
-                    <Form.Control type="number" placeholder="Age" name="age" value={data.age} onChange={handleChange} autoComplete="bday-year" required/>
+                    <Form.Control type="number" min="18" max="99" placeholder="Age" name="age" value={data.age} onChange={handleChange} autoComplete="bday-year" required/>
                     </Form.Group>
 
                     <Form.Group as={Col} controlId="formGridSex">
@@ -117,7 +117,7 @@ const Register = () => {
                     </Form.Group>
                 </Form.Row>
 
-                <Button variant="primary" type="submit">
+                <Button className="button--primary" type="submit">
                     Submit
                 </Button>
                 </Form>

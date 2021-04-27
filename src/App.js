@@ -12,6 +12,7 @@ import Register from './components/Register'
 import Login from './components/Login'
 import Navigation from './components/Navbar'
 import Profile from './components/Profile'
+import Edit from './components/Edit'
 import { getUserInfo } from './services/UserService'
 import { getAccessToken } from './store/AccessTokenStore';
 
@@ -39,6 +40,9 @@ let App = () => {
         </Route>
         <Route path="/log-in">
           <Login />
+        </Route>
+        <Route path="/profile/edit">
+          <Edit user={user}/>
         </Route>
         <Route path="/profile">
           <Profile user={user}/>

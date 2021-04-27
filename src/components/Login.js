@@ -89,7 +89,7 @@ const Login = ({ doLogin }) => {
                         </Form.Group>
                     </Form.Row>
 
-                    <Button variant="primary" type="submit">
+                    <Button className="button--primary" type="submit">
                         Submit
                     </Button>
             </Form>

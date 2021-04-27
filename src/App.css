@@ -82,6 +82,19 @@
   color: #eb5e0b !important
 }
 
+.profile--picture {
+  max-height: 25vh;
+  max-width: 25vh;
+}
+
+.profile--data i {
+  color: #a3d2ca;
+}
+
+.profile--data i:hover {
+  color: #5eaaa8;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
