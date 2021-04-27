@@ -10,7 +10,7 @@ const Organ = ({
   fillOpacity,
   strokeOpacity,
   cursor,
-  handleInputChange
+  handleInputChange,
 }) => {
   //   let w = window.innerWidth;
   //   let h = window.innerHeight;
@@ -33,10 +33,6 @@ const Organ = ({
   const handleMouseLeave = (e) => {
     e.persist();
     setinOrgan(false);
-  };
-
-  const handleOnClick = (e) => {
-    e.persist();
   };
 
   return (
