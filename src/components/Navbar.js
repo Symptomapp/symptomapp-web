@@ -5,8 +5,8 @@ import logo from "../logo.svg";
 const Navigation = ({ user }) => {
   return (
     <>
-      <Navbar className="navigation">
-        <Navbar.Brand href="/">
+      <Navbar className="Navigation">
+        <Navbar.Brand href="/home">
           <img
             src={logo}
             width="30"
