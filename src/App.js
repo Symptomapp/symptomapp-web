@@ -1,8 +1,4 @@
 import "./App.css";
-import Body from "./components/anatomy/Body";
-import innerOrgans from "./data/inner_body.json";
-import outterOrgans from "./data/outter_body.json";
-import face from "./data/face.json";
 import { React, useEffect, useState } from "react";
 //import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
