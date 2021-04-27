@@ -1,1 +1,89 @@
 
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #f8f1f1;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #282c34;
+}
+
+.App-link {
+  color: #5eaaa8;
+  text-decoration: none;
+}
+
+.App-link:hover {
+  color: #eb5e0b;
+  text-decoration: none;
+}
+
+.navigation {
+  background-color: #5eaaa8;
+}
+
+.navigation--link {
+  color: #ffffff !important
+}
+
+.navigation--link:hover {
+  color: #eb5e0b !important
+}
+
+.navigation img:hover {
+  border: 2px solid #5eaaa8;
+}
+
+.footer {
+  background-color: #5eaaa8;
+  text-align: center;
+  color: #ffffff;
+  padding: 8px 16px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.button--primary {
+  background-color: #5eaaa8 !important;
+  border: 0px !important;
+}
+
+.button--primary:hover {
+  background-color: #a3d2ca !important;
+  border: 1px solid #5eaaa8 !important;
+  color: #eb5e0b !important
+}
+
+.button--secondary {
+  background-color: #eb5e0b !important;
+  border: 0px !important;
+}
+
+.button--secondary:hover {
+  background-color: #a3d2ca !important;
+  border: 1px solid #eb5e0b !important;
+  color: #eb5e0b !important
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
