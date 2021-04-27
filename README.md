@@ -1,5 +1,5 @@
 # Symptomapp
-![SYMPTOMAPP](https://raw.githubusercontent.com/Symptomapp/symptomapp-web/df679581684796ba45862b978d0e0c921dd45bd5/src/logo.svg?token=AOJQ3T6Z5F6RREBBHGXU7IDAQF7M6)
+![SYMPTOMAPP](https://github.com/Symptomapp/symptomapp-web/blob/master/src/rotating_logo.gif?raw=true)
 
 #### About
 

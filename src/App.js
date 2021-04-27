@@ -16,20 +16,18 @@ import Edit from './components/Edit'
 import { getUserInfo } from './services/UserService'
 import { getAccessToken } from './store/AccessTokenStore';
 
-
 let App = () => {
-  const [user, setUser] = useState(null)
+  const [user, setUser] = useState(null);
 
   const getUser = (userId) => {
-    return getUserInfo(userId)
-      .then(response => setUser(response))
-  }
+    return getUserInfo(userId).then((response) => setUser(response));
+  };
 
   useEffect(() => {
     if (getAccessToken()) {
-      getUser(window.localStorage.userId)
+      getUser(window.localStorage.userId);
     }
-  }, [])
+  }, []);
 
   return (
     <Router>
@@ -66,6 +64,6 @@ let App = () => {
       <div className="footer"><small><i className="fas fa-stethoscope"></i> symptomapp 2021</small></div>
     </Router>
   );
-}
+};
 
 export default App;
