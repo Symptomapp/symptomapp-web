@@ -92,6 +92,22 @@
   color: #5eaaa8;
 }
 
+.color--lightgreen {
+  color: #a3d2ca;
+}
+
+.color--green {
+  color: #5eaaa8;
+}
+
+.color--orange {
+  color: #eb5e0b;
+}
+
+.color--light {
+  color: #f8f1f1;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

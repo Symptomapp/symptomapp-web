@@ -30,6 +30,8 @@ export default function Router() {
         path="/body-map/external"
         render={() => <Body organs={outterOrgans} />}
       />
+      <Route exact path="/" component={Home} />
     </Switch>
   );
 }
+
