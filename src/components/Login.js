@@ -69,6 +69,7 @@ const Login = ({ doLogin }) => {
             }
         }
         });
+
     };
 
     return (
@@ -92,6 +93,7 @@ const Login = ({ doLogin }) => {
                         Submit
                     </Button>
             </Form>
+
         </div>
     );
 }

@@ -11,6 +11,8 @@ const Edit = () => {
 
   const [message, setMessage] = useState({});
 
+  const [data, setData] = useState({});
+
   useEffect(() => {
         getUserInfo(window.localStorage.userId)
         .then(user => setUser({
@@ -48,6 +50,17 @@ const Edit = () => {
           [name]: value,
         }
     });
+    
+    // setUser(prev => {
+    //   return {
+    //     ...prev,
+    //     user: {
+    //       ...prev.user,
+    //       [name]: value,
+    //     }
+    //   }
+    // });
+
   };
 
   return (
@@ -108,6 +121,7 @@ const Edit = () => {
                 </Button>
                 </Form>
         }
+
     </div>
   );
 }
