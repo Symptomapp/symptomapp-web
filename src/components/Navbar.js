@@ -5,7 +5,6 @@ import logo from "../logo.svg";
 const Navigation = ({ user }) => {
   return (
     <>
-
       <Navbar className="Navigation">
         <Navbar.Brand href="/home">
           <img
@@ -18,30 +17,24 @@ const Navigation = ({ user }) => {
         </Navbar.Brand>
         {user ? (
           <Nav className="mr-auto">
-            <NavDropdown
-              title="Body map"
-              className="navigation--link color--light"
-            <Nav.Link className="navigation--link" href="/links">
-              Links
-            </Nav.Link>
-            <Nav.Link className="navigation--link" href="/body-map">
-              Body map
-            </Nav.Link>
-            <Nav.Link className="navigation--link" href="/search">
-              Search
-            </Nav.Link>
-            <Nav.Link className="navigation--link" href="/profile">
-              <small>
-                <i className="fas fa-user"></i>
-              </small>{" "}
-              {user.name}
-            </Nav.Link>
-          </Nav>
+          <Nav.Link className="navigation--link" href="/links">
+            Links
+          </Nav.Link>
+          <Nav.Link className="navigation--link" href="/body-map">
+            Body map
+          </Nav.Link>
+          <Nav.Link className="navigation--link" href="/search">
+            Search
+          </Nav.Link>
+          <Nav.Link className="navigation--link" href="/profile">
+            <small>
+              <i className="fas fa-user"></i>
+            </small>{" "}
+            {user.name}
+          </Nav.Link>
+        </Nav>
         ) : (
           <Nav className="mr-auto">
-            <Nav.Link className="navigation--link" href="/links">
-              Links
-            </Nav.Link>
             <NavDropdown
               title="Body map"
               className="navigation--link"
@@ -67,18 +60,7 @@ const Navigation = ({ user }) => {
               <small>
                 <i className="fas fa-user color--lightgreen"></i>
               </small>{" "}
-              {user.name}
-            </Nav.Link>
-          </Nav>
-        ) : (
-          <Nav className="mr-auto navigation--link">
-            <span className="color--light">sympto</span><span className="color--lightgreen">m<strong>ap</strong></span><span className="color--light"><strong>p</strong></span>
-          </Nav>
-            <Nav.Link className="navigation--link" href="/profile">
-              <small>
-                <i className="fas fa-user"></i>
-              </small>{" "}
-              'User'
+              'USER - CHANGEME'
             </Nav.Link>
           </Nav>
         )}

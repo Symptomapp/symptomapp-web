@@ -4,7 +4,6 @@ import Navigation from './components/Navbar'
 import Router from './components/Router'
 import Footer from './components/Footer'
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
   Link
@@ -14,7 +13,6 @@ import './App.css';
 import Button from 'react-bootstrap/Button'
 import Register from './components/Register'
 import Login from './components/Login'
-import Navigation from './components/Navbar'
 import Profile from './components/Profile'
 import Edit from './components/Edit'
 

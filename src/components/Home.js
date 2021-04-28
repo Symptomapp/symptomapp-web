@@ -13,7 +13,7 @@ const Home = () => {
   }
 
   return (
-    <div className="App">
+    <div className="Home">
             <header className="App-header">
               <img src={logo} className="App-logo" alt="logo" />
               <p className="mt-3 text-center">
@@ -34,44 +34,44 @@ const Home = () => {
           </div>
 
     
-const Home = () => {
-  const user = null;
-  return (
-    <div className="Home">
-      <div className="App">
-        <header className="App-header m-1">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p className="mt-3">
-            This will be the <strong>frontend</strong> for{" "}
-            <strong>Symptomapp</strong> project.
-          </p>
-          <Link
-            to={{ pathname: "https://github.com/Symptomapp" }}
-            target="_blank"
-            className="App-link"
-          >
-            <i className="fab fa-github"> </i> Symptomapp on Github
-          </Link>
-          {user ? (
-            ""
-          ) : (
-            <div className="row">
-              <Link to="/sign-up" className="App-link mt-3 mx-2">
-                <Button className="button--primary">Register</Button>
-              </Link>
-              <Link to="/log-in" className="App-link mt-3 mx-2">
-                <Button className="button--primary">Login</Button>
-              </Link>
-            </div>
-          )}
-        </header>
-      </div>
-      <div className="footer">
-        <small>
-          <i className="fas fa-stethoscope"></i> symptomapp 2021
-        </small>
-      </div>
-    </div>
+// const Home = () => {
+//   const user = null;
+//   return (
+//     <div className="Home">
+//       <div className="App">
+//         <header className="App-header m-1">
+//           <img src={logo} className="App-logo" alt="logo" />
+//           <p className="mt-3">
+//             This will be the <strong>frontend</strong> for{" "}
+//             <strong>Symptomapp</strong> project.
+//           </p>
+//           <Link
+//             to={{ pathname: "https://github.com/Symptomapp" }}
+//             target="_blank"
+//             className="App-link"
+//           >
+//             <i className="fab fa-github"> </i> Symptomapp on Github
+//           </Link>
+//           {user ? (
+//             ""
+//           ) : (
+//             <div className="row">
+//               <Link to="/sign-up" className="App-link mt-3 mx-2">
+//                 <Button className="button--primary">Register</Button>
+//               </Link>
+//               <Link to="/log-in" className="App-link mt-3 mx-2">
+//                 <Button className="button--primary">Login</Button>
+//               </Link>
+//             </div>
+//           )}
+//         </header>
+//       </div>
+//       <div className="footer">
+//         <small>
+//           <i className="fas fa-stethoscope"></i> symptomapp 2021
+//         </small>
+//       </div>
+//     </div>
 
   );
 };
