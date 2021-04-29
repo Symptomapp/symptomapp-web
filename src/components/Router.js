@@ -13,6 +13,7 @@ import face from "../data/face.json";
 export default function Router() {
   return (
     <Switch>
+      <Route exact path="/home" component={Home} />
       <Route exact path="/sign-up" component={Register} />
       <Route exact path="/profile/edit" render={(user) => <Edit user={user} />} />
       <Route exact path="/profile" render={(user) => <Profile user={user} />} />
@@ -33,8 +34,8 @@ export default function Router() {
         path="/body-map/external"
         render={() => <Body organs={outterOrgans} />}
       />
-      <Route exact path="/home" component={Home} />
       <Route exact path="/" component={Home} />
     </Switch>
   );
 }
+
