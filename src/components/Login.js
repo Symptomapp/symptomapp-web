@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Form, Button, Col, Alert } from 'react-bootstrap'
 import { Link } from "react-router-dom";
 import { setAccessToken } from '../store/AccessTokenStore';
+import API_URL from '../constants/constants'
 
 const axios = require('axios').default;
 
@@ -35,7 +36,7 @@ const Login = ({ doLogin }) => {
     const handleSubmit = async (event) => {
         event.preventDefault();
 
-        axios.post('http://localhost:3001/auth/login', data )
+        axios.post(`${API_URL}/auth/login`, data )
         .then(function (response) {
             response.data.errors
             ? setState(prev => {
