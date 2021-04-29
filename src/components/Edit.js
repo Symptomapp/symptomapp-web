@@ -1,7 +1,8 @@
 import { React, useEffect, useState } from 'react';
-import { Form, Button, Col, Alert } from 'react-bootstrap'
+import { Form, Button, Col, Alert } from 'react-bootstrap';
 import { Link } from "react-router-dom";
-import { getUserInfo } from '../services/UserService'
+import { getUserInfo } from '../services/UserService';
+import API_URL from '../constants/constants';
 
 const axios = require('axios').default;
 
@@ -31,7 +32,7 @@ const Edit = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    axios.post(`http://localhost:3001/users/edit/${user._id}/${user.token}`, user)
+    axios.post(`${API_URL}/users/edit/${user._id}/${user.token}`, user)
     .then(function (response) {
         setMessage(response.data);
         window.location.assign('/profile')

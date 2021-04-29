@@ -1,9 +1,10 @@
 import axios from 'axios'
 import { getAccessToken, logout } from '../store/AccessTokenStore'
+import API_URL from '../constants/constants'
 
 export const create = (opts = {}) => {
   const http = axios.create({
-    baseURL: 'http://localhost:3001/',
+    baseURL: API_URL,
     ...opts
   })
 

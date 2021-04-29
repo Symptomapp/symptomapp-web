@@ -7,7 +7,7 @@ import API_URL from '../constants/constants'
 
 const axios = require('axios').default;
 
-const Profile = ({user}) => {
+const Results = ({user}) => {
 
     const [state, setState] = useState({user})
 
@@ -61,4 +61,4 @@ const Profile = ({user}) => {
     );
 }
 
-export default Profile
+export default Results

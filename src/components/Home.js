@@ -2,14 +2,13 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import logo from "../logo.svg";
-
-import { setAccessToken } from '../store/AccessTokenStore';
+import { setDemoToken } from '../store/AccessTokenStore';
 
 const Home = () => {
   const user = null;
 
   const setDemoUser = () => {
-    setAccessToken('6kcbyeoc37crahgscckz62gywbtlkp8ss3in9vvp2qb', '60896b3d72d2ef0c9b5a71e5')
+    setDemoToken()
   }
 
   return (
