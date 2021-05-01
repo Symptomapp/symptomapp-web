@@ -1,6 +1,7 @@
 [
   {
     "id": "huwp1",
+    "LocationID": 24,
     "name": "Head",
     "fill": "#FF0000",
     "stroke": "#ff8080",
@@ -12,6 +13,7 @@
   },
   {
     "id": "huwp2",
+    "LocationID": 24,
     "name": "Neck",
     "fill": "#FF0000",
     "stroke": "#ff8080",
@@ -23,6 +25,7 @@
   },
   {
     "id": "huwp3",
+    "LocationID": 31,
     "name": "Chest",
     "fill": "#FF0000",
     "stroke": "#ff8080",
@@ -34,6 +37,7 @@
   },
   {
     "id": "huwp4",
+    "LocationID": 36,
     "name": "Abdomen",
     "fill": "#FF0000",
     "stroke": "#ff8080",
@@ -45,6 +49,7 @@
   },
   {
     "id": "huwp5",
+    "LocationID": 37,
     "name": "Pelvis",
     "fill": "#FF0000",
     "stroke": "#ff8080",
@@ -56,6 +61,7 @@
   },
   {
     "id": "huwp6",
+    "LocationID": 38,
     "name": "Pubis",
     "fill": "#FF0000",
     "stroke": "#ff8080",
@@ -67,6 +73,7 @@
   },
   {
     "id": "huwp7",
+    "LocationID": 26,
     "name": "Shoulder R",
     "fill": "#FF0000",
     "stroke": "#ff8080",
@@ -78,6 +85,7 @@
   },
   {
     "id": "huwp8",
+    "LocationID": 26,
     "name": "Soulder L",
     "fill": "#FF0000",
     "stroke": "#ff8080",
@@ -89,6 +97,7 @@
   },
   {
     "id": "huwp9",
+    "LocationID": 48,
     "name": "Arm R",
     "fill": "#FF0000",
     "stroke": "#ff8080",
@@ -100,6 +109,7 @@
   },
   {
     "id": "huwp10",
+    "LocationID": 48,
     "name": "Arm L",
     "fill": "#FF0000",
     "stroke": "#ff8080",
@@ -111,6 +121,7 @@
   },
   {
     "id": "huwp11",
+    "LocationID": 48,
     "name": "Elbow R",
     "fill": "#FF0000",
     "stroke": "#ff8080",
@@ -122,6 +133,7 @@
   },
   {
     "id": "huwp12",
+    "LocationID": 48,
     "name": "Elbow L",
     "fill": "#FF0000",
     "stroke": "#ff8080",
@@ -133,6 +145,7 @@
   },
   {
     "id": "huwp13",
+    "LocationID": 28,
     "name": "Forearm R",
     "fill": "#FF0000",
     "stroke": "#ff8080",
@@ -144,6 +157,7 @@
   },
   {
     "id": "huwp14",
+    "LocationID": 28,
     "name": "Forearm L",
     "fill": "#FF0000",
     "stroke": "#ff8080",
@@ -155,6 +169,7 @@
   },
   {
     "id": "huwp15",
+    "LocationID": 29,
     "name": "Wrist R",
     "fill": "#FF0000",
     "stroke": "#ff8080",
@@ -166,6 +181,7 @@
   },
   {
     "id": "huwp16",
+    "LocationID": 29,
     "name": "Wrist L",
     "fill": "#FF0000",
     "stroke": "#ff8080",
@@ -177,6 +193,7 @@
   },
   {
     "id": "huwp17",
+    "LocationID": 29,
     "name": "Hand R",
     "fill": "#FF0000",
     "stroke": "#ff8080",
@@ -188,6 +205,7 @@
   },
   {
     "id": "huwp18",
+    "LocationID": 29,
     "name": "Hand L",
     "fill": "#FF0000",
     "stroke": "#ff8080",
@@ -199,6 +217,7 @@
   },
   {
     "id": "huwp19",
+    "LocationID": 41,
     "name": "Thight R",
     "fill": "#FF0000",
     "stroke": "#ff8080",
@@ -210,6 +229,7 @@
   },
   {
     "id": "huwp20",
+    "LocationID": 41,
     "name": "Thight L",
     "fill": "#FF0000",
     "stroke": "#ff8080",
@@ -221,6 +241,7 @@
   },
   {
     "id": "huwp21",
+    "LocationID": 41,
     "name": "Knee R",
     "fill": "#FF0000",
     "stroke": "#ff8080",
@@ -232,6 +253,7 @@
   },
   {
     "id": "huwp22",
+    "LocationID": 41,
     "name": "Knee L",
     "fill": "#FF0000",
     "stroke": "#ff8080",
@@ -243,6 +265,7 @@
   },
   {
     "id": "huwp23",
+    "LocationID": 49,
     "name": "Leg R",
     "fill": "#FF0000",
     "stroke": "#ff8080",
@@ -254,6 +277,7 @@
   },
   {
     "id": "huwp24",
+    "LocationID": 49,
     "name": "Leg L",
     "fill": "#FF0000",
     "stroke": "#ff8080",
@@ -265,6 +289,7 @@
   },
   {
     "id": "huwp25",
+    "LocationID": 43,
     "name": "Ankle R",
     "fill": "#FF0000",
     "stroke": "#ff8080",
@@ -276,6 +301,7 @@
   },
   {
     "id": "huwp26",
+    "LocationID": 43,
     "name": "Ankle L",
     "fill": "#FF0000",
     "stroke": "#ff8080",
@@ -287,6 +313,7 @@
   },
   {
     "id": "huwp27",
+    "LocationID": 44,
     "name": "Foot R",
     "fill": "#FF0000",
     "stroke": "#ff8080",
@@ -298,6 +325,7 @@
   },
   {
     "id": "huwp28",
+    "LocationID": 44,
     "name": "Foot L",
     "fill": "#FF0000",
     "stroke": "#ff8080",
