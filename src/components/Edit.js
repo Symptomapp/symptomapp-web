@@ -12,7 +12,7 @@ const Edit = () => {
 
   const [message, setMessage] = useState({});
 
-  const [data, setData] = useState({});
+  //const [data, setData] = useState({});
 
   useEffect(() => {
         getUserInfo(window.localStorage.userId)
