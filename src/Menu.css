@@ -1,14 +1,15 @@
-:root {
-    --base-grid: 6px;
+@import url('https://filebin.net/rgset9bh8ay97dzr/Menu.css?t=oxyudr7g');
 
-  }
+/* :root {
+    --base-grid: 6px;
+}
   
-  *, :after, :before {
+*, :after, :before {
       box-sizing: border-box;
-  }
+}
   
-  .links {
-    --link-size: calc(var(--base-grid)*18);
+.links {
+    --link-size: 108px;
     color: #5eaaa8;
     display: flex;
     justify-content: center;
@@ -16,12 +17,12 @@
     width: 100%;
     min-height: 80vh;
     background-color: #f8f1f1;
-  }
+}
   
-  .links__list {
+.links__list {
     position: relative;
     list-style: none;
-  }
+}
   
   .links__item {
     width: var(--link-size);
@@ -29,9 +30,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    margin-top: calc(var(--link-size)/-2);
-    margin-left: calc(var(--link-size)/-2);
-    --angle: calc(360deg/var(--item-total));
+    margin-top: -54px;
+    margin-left: -54px;
+    --angle: 60deg;
     --rotation: calc(140deg + var(--angle)*var(--item-count));
     transform: rotate(var(--rotation)) translate(calc(var(--link-size) + var(--base-grid)*2)) rotate(calc(var(--rotation)*-1));
     border: 1px solid #5eaaa8;
@@ -67,7 +68,6 @@
     fill: #5eaaa8;
   }
 
-  
   .links__text {
     position: absolute;
     width: 100%;
@@ -171,4 +171,4 @@
 .home {
     background-color: #5eaaa8 !important;
     fill:#f8f1f1 !important
-}
+} */
