@@ -6,7 +6,7 @@ const Navigation = ({ user }) => {
   return (
     <>
       <Navbar className="navigation">
-        <Navbar.Brand href="/home">
+        <Navbar.Brand href="/">
           <img
             src={logo}
             width="30"

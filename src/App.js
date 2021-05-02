@@ -3,18 +3,6 @@ import './App.css';
 import Navigation from './components/Navbar'
 import Router from './components/Router'
 import Footer from './components/Footer'
-import {
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-import logo from './logo.svg';
-import './App.css';
-import Button from 'react-bootstrap/Button'
-import Register from './components/Register'
-import Login from './components/Login'
-import Profile from './components/Profile'
-import Edit from './components/Edit'
 
 import { getUserInfo } from './services/UserService'
 import { getAccessToken } from './store/AccessTokenStore';
@@ -33,10 +21,9 @@ let App = () => {
   }, []);
 
   return (
-
     <>
       <Navigation user={user}/>
-      <Router />
+      <Router user={user}/>
       <Footer />
     </>
 
