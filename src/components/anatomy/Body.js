@@ -1,11 +1,15 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Body.css";
 import Organ from "./Organ";
+import { getBodySymptoms } from "../../services/Apimedic/ApimedicService";
 
 const Body = ({ organs }) => {
   let w = window.innerWidth;
   let h = window.innerHeight;
   const [organName, setOrganName] = useState("SELECT BODY PART");
+  const [symptoms, setSymptoms] = useState(
+    "Select body part to display symptoms"
+  );
   const [bgColor, setBgColor] = useState("red");
   const [isOuter, setOuter] = useState(false);
   const [currentWidth, setCurrentWidth] = useState(0);
@@ -28,10 +32,15 @@ const Body = ({ organs }) => {
   const handleInputChange = (e) => {
     const name = e.target.attributes.name.value;
     const fill = e.target.attributes.fill.value;
+    getBodySymptoms(Number(e.target.attributes.locationid.value)).then((d) =>
+      setSymptoms(d)
+    );
 
     setOrganName(name);
     setBgColor(fill);
+    console.log(symptoms);
   };
+
 
   return (
     <div className="Body container mt-4">
@@ -72,10 +81,11 @@ const Body = ({ organs }) => {
               {organName}
             </div>
             <ul className="list-group list-group-flush">
-              <li className="list-group-item">An item</li>
-              <li className="list-group-item">A second item</li>
-              <li className="list-group-item">A third item</li>
-              <li className="list-group-item">More</li>
+              {symptoms === "Select body part to display symptoms" ? (
+                <li className="list-group-item">{"symptoms"}</li>
+              ) : (
+                symptoms.map((symptom, i) => <li key={symptom.ID} className="list-group-item">{symptom.Name}</li>)
+              )}
             </ul>
           </div>
         </div>

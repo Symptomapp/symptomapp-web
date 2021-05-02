@@ -3,6 +3,7 @@ import './App.css';
 import Navigation from './components/Navbar'
 import Router from './components/Router'
 import Footer from './components/Footer'
+import './App.css';
 
 import { getUserInfo } from './services/UserService'
 import { getAccessToken } from './store/AccessTokenStore';

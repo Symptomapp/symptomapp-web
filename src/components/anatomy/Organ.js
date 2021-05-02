@@ -3,6 +3,7 @@ import React, { useState } from "react";
 const Organ = ({
   id,
   name,
+  LocationID,
   vectorEffect,
   fill,
   stroke,
@@ -43,6 +44,7 @@ const Organ = ({
         onMouseLeave={handleMouseLeave}
         onClick={handleInputChange}
         id={id}
+        locationid={LocationID}
         name={name}
         vectorEffect={vectorEffect}
         fill={fill}

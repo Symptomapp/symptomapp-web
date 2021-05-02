@@ -49,16 +49,6 @@ const Edit = () => {
           [name]: value,
         }
     });
-    
-    // setUser(prev => {
-    //   return {
-    //     ...prev,
-    //     user: {
-    //       ...prev.user,
-    //       [name]: value,
-    //     }
-    //   }
-    // });
 
   };
 
