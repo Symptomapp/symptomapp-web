@@ -22,10 +22,9 @@ let App = () => {
   }, []);
 
   return (
-
     <>
       <Navigation user={user}/>
-      <Router />
+      <Router user={user}/>
       <Footer />
     </>
 
