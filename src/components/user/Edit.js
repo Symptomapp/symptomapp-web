@@ -1,8 +1,8 @@
 import { React, useEffect, useState } from 'react';
 import { Form, Button, Col, Alert } from 'react-bootstrap';
 import { Link } from "react-router-dom";
-import { getUserInfo } from '../services/UserService';
-import API_URL from '../constants/constants';
+import { getUserInfo } from '../../services/UserService';
+import API_URL from '../../constants/constants';
 
 const axios = require('axios').default;
 

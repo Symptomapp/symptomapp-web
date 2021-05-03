@@ -25,7 +25,7 @@ const Home = ({ user }) => {
     (<div className="Home">
             <header className="App-header pb-5">
               <img src={logo} className="App-logo" alt="logo" />
-              <span className="text-center m-2">
+              <span className="text-center my-2 mx-5">
               <small className="color--green">Welcome to</small>
               <h3 className="pb-4">Symptomapp</h3>
               <strong>Symptomapp</strong> offers a medical symptom checker primarily for patients. Based on the entered symptoms it tells the patient what possible diseases he has. It directs him to more medical information and shows the right doctor for further clarifications.

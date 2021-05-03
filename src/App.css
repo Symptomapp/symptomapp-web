@@ -125,6 +125,26 @@ html {
   color: #f8f1f1;
 }
 
+.results--card {
+  min-width: 40% !important;
+  margin-top: 2%;
+  border: 1px solid #5eaaa8 !important;
+}
+
+.results--card:hover {
+  box-shadow: 3px 3px 3px #a3d2ca;
+}
+
+.card-header {
+  background-color: #a3d2ca !important;
+  color: #ffffff !important;
+}
+
+.card-body {
+  background-color: #ffffff !important;
+  color: #282c34 !important;  
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

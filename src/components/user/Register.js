@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Form, Button, Col, Alert } from 'react-bootstrap'
 import { Link } from "react-router-dom";
-import API_URL from '../constants/constants'
+import API_URL from '../../constants/constants'
 
 const axios = require('axios').default;
 

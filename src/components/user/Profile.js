@@ -1,9 +1,9 @@
 import { React, useEffect, useState } from 'react';
 import { Button, Modal } from 'react-bootstrap'
 import { Link } from "react-router-dom";
-import { logout } from '../store/AccessTokenStore';
-import { getUserInfo } from '../services/UserService';
-import API_URL from '../constants/constants'
+import { logout } from '../../store/AccessTokenStore';
+import { getUserInfo } from '../../services/UserService';
+import API_URL from '../../constants/constants'
 
 const axios = require('axios').default;
 

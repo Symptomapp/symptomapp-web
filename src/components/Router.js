@@ -1,10 +1,10 @@
 import { Route, Switch } from "react-router-dom";
 import Home from "./Home";
-import Register from "./Register";
-import Profile from "./Profile";
-import Edit from "./Edit";
-import Login from "./Login";
-import Results from "./Results";
+import Register from "./user/Register";
+import Profile from "./user/Profile";
+import Edit from "./user/Edit";
+import Login from "./user/Login";
+import Results from "./results/Results";
 import Search from "./Search";
 import Links from "./Links";
 import Body from "./anatomy/Body";
