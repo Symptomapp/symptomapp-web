@@ -3,6 +3,7 @@ import { Button, Modal } from 'react-bootstrap'
 import { Link } from "react-router-dom";
 import { logout } from '../../store/AccessTokenStore';
 import { getUserInfo } from '../../services/UserService';
+import Loader from '../Loader'
 import API_URL from '../../constants/constants'
 
 const axios = require('axios').default;
@@ -12,6 +13,10 @@ const Profile = ({user}) => {
     const [state, setState] = useState({user})
 
     const [show, setShow] = useState(false);
+
+    const [loading, setLoading] = useState(true);
+
+    const setLoaded = () => setLoading(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -24,10 +29,16 @@ const Profile = ({user}) => {
 
     useEffect(() => {
         getUserInfo(window.localStorage.userId)
-        .then(user => setState(user))
+        .then(user => {
+            setState(user);
+            setLoaded()
+            }
+        )
     }, [])
    
     return (
+            <>
+            { (loading) ? (<Loader />) : ('') }
             <div className="container mt-5 text-center">
             <div><img src={state.picture} className="profile--picture" alt={state.name}/></div>
             <div className="profile--data"><small><i className="fas fa-tags mr-1"></i></small> {state.name}</div>
@@ -58,6 +69,7 @@ const Profile = ({user}) => {
                 </Modal.Footer>
             </Modal>
         </div>
+        </>
     );
 }
 
