@@ -163,8 +163,17 @@ html {
   background-color: #f8f1f1 !important;
 }
 
-.card-columns {
-  
+.profile--card {
+  border: 1px solid #5eaaa8 !important;
+}
+
+.profile--card--item {
+  border-top: 1px dashed #a3d2ca !important;
+  border-bottom: 1px dashed #a3d2ca !important;
+}
+
+.profile--row:hover {
+  background-color: #f8f1f1;
 }
 
 .card--link {
@@ -177,11 +186,72 @@ html {
   opacity: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.searchbar {
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 60px;
+  background-color: #5eaaa8;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.search_input {
+  color: white;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  caret-color:transparent;
+  line-height: 40px;
+  transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_input {
+  padding: 0 10px;
+  width: 450px;
+  caret-color:#eb5e0b;
+  transition: width 0.4s linear;
+}
+
+@media only screen and (max-width: 550px) {
+  .searchbar:hover > .search_input {
+    padding: 0 10px;
+    width: 250px;
+    caret-color:#eb5e0b;
+    transition: width 0.4s linear;
   }
 }
+
+.searchbar:hover > .search_icon {
+  background: white;
+  color: #eb5e0b;
+}
+
+.search_icon {
+  height: 40px;
+  width: 40px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color:white;
+  text-decoration:none;
+}
+
+.search--row {
+  border: 1px solid #5eaaa8 !important;
+}
+
+.search--row:hover{
+  background-color: #a3d2ca !important;
+}
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
