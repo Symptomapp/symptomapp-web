@@ -45,6 +45,7 @@ const Profile = ({user}) => {
             <div className="container mt-5 text-center">
 
             <Card className="profile--card mx-3">
+                <div className="profile-custom-icon shadow-sm"><i className="fas fa-user-circle text-white fa-3x"></i></div>
                 <Card.Body>
                     <Card.Title><img src={state.picture} className="profile--picture" alt={state.name}/></Card.Title>
                     <Card.Text>

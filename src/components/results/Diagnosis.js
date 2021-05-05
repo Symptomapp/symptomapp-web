@@ -2,7 +2,7 @@ import { React, useEffect, useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import { getUserInfo } from '../../services/UserService';
 
-const Diagnosys = ({user}) => {
+const Diagnosis = ({user}) => {
 
     const [state, setState] = useState({user})
 
@@ -15,7 +15,7 @@ const Diagnosys = ({user}) => {
         <>
         <Card className="results--card">
             <Card.Header className="results---card--header">
-                <Card.Title>Diagnosys</Card.Title>
+                <Card.Title>Diagnosis</Card.Title>
             </Card.Header>
             <Card.Body>
             <Card.Text>
@@ -28,4 +28,4 @@ const Diagnosys = ({user}) => {
     );
 }
 
-export default Diagnosys
+export default Diagnosis

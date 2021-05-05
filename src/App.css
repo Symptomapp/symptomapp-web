@@ -186,6 +186,19 @@ html {
   opacity: 1;
 }
 
+.profile-custom-icon {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -25px;
+  left: 25px;
+  background-color: #5eaaa8;
+}
+
 .searchbar {
   margin-bottom: auto;
   margin-top: auto;
@@ -245,6 +258,10 @@ html {
 
 .search--row:hover{
   background-color: #a3d2ca !important;
+}
+
+#map {
+  height: 100%;
 }
 
   @keyframes App-logo-spin {

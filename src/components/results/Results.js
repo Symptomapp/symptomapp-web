@@ -1,8 +1,8 @@
 import { React, useEffect, useState } from 'react';
 import Symptoms from './Symptoms';
-import Diagnosys from './Diagnosys';
+import Diagnosis from './Diagnosis';
 import Advertising from './Advertising';
-import Map from './Map';
+import MapCanvas from './Map';
 import CardDeck from 'react-bootstrap/CardDeck'
 import { getUserInfo } from '../../services/UserService';
 
@@ -19,9 +19,9 @@ const Results = ({user}) => {
         <div className="container m-3 mx-auto">
             <CardDeck className="mb-5">
                 <Symptoms />
-                <Diagnosys />
+                <Diagnosis />
                 <Advertising />
-                <Map />
+                <MapCanvas />
             </CardDeck>
         </div>
     );
