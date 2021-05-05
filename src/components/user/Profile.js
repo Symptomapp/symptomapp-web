@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import { logout } from '../../store/AccessTokenStore';
 import { getUserInfo } from '../../services/UserService';
 import Loader from '../Loader'
+import Card from 'react-bootstrap/Card'
+import ListGroup from 'react-bootstrap/ListGroup'
+import ListGroupItem from 'react-bootstrap/ListGroupItem'
 import API_URL from '../../constants/constants'
 
 const axios = require('axios').default;
@@ -40,12 +43,23 @@ const Profile = ({user}) => {
             <>
             { (loading) ? (<Loader />) : ('') }
             <div className="container mt-5 text-center">
-            <div><img src={state.picture} className="profile--picture" alt={state.name}/></div>
-            <div className="profile--data"><small><i className="fas fa-tags mr-1"></i></small> {state.name}</div>
-            <div className="profile--data"><small><i className="fas fa-tags mr-1"></i></small> {state.surname}</div>
-            <div className="profile--data"><small><i className="fas fa-envelope mr-1"></i></small> {state.email}</div>
-            <div className="profile--data"><small><i className="fas fa-venus-mars mr-1"></i></small> {state.sex}</div>
-            <div className="profile--data mb-3"><small><i className="fas fa-map-marker-alt mr-1"></i></small> {state.city}</div>
+
+            <Card className="profile--card mx-3">
+                <div className="profile-custom-icon shadow-sm"><i className="fas fa-user-circle text-white fa-3x"></i></div>
+                <Card.Body>
+                    <Card.Title><img src={state.picture} className="profile--picture" alt={state.name}/></Card.Title>
+                    <Card.Text>
+                    <strong className="profile--data"><i className="fas fa-tags mr-1"></i> {state.name}  {state.surname} </strong>
+                    </Card.Text>
+                </Card.Body>
+                <ListGroup className="list-group-flush">
+                    <ListGroupItem className="profile--row"><p className="profile--data mb-0"><small><i className="fas fa-envelope mr-1"></i></small> {state.email}</p></ListGroupItem>
+                    <ListGroupItem className="profile--row profile--card--item"><p className="profile--data mb-0"><small><i className="fas fa-venus-mars mr-1"></i></small> {state.sex}</p></ListGroupItem>
+                    <ListGroupItem className="profile--row"><div className="profile--data"><small><i className="fas fa-map-marker-alt mr-1"></i></small> {state.city}</div></ListGroupItem>
+                </ListGroup>
+                </Card>
+
+
             <Button onClick={logout} className="button--primary mt-3 mx-2"><small><i className="fas fa-sign-out-alt"></i></small> Logout</Button>
             <Link to="/profile/edit"><Button className="button--primary mt-3 mx-2"><small><i className="fas fa-edit"></i></small> Edit profile</Button></Link>
             <Button onClick={handleShow} className="button--secondary mt-3 mx-2"><small><i className="fas fa-trash-alt"></i></small> Delete profile</Button>

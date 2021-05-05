@@ -1,16 +1,19 @@
 import { React, useEffect, useState } from 'react';
 import Card from 'react-bootstrap/Card';
-import { getUserInfo } from '../../services/UserService';
+import GoogleMapReact from 'google-map-react';
 
-const Map = ({user}) => {
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
-    const [state, setState] = useState({user})
+const MapCanvas = () => {
 
-    useEffect(() => {
-        getUserInfo(window.localStorage.userId)
-        .then(user => setState(user))
-    }, [])
-   
+    const defaultProps = {
+        center: {
+        lat: 40.418936897871724,
+        lng: -3.6716873227221694
+        },
+        zoom: 14
+    };
+
     return (
         <>
         <Card className="results--card">
@@ -19,12 +22,25 @@ const Map = ({user}) => {
             </Card.Header>
             <Card.Body>
             <Card.Text>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12149.985246609158!2d-3.6700922932928957!3d40.42000778902448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228aed26288b7%3A0xf3d3fe114341e1fd!2sHospital%20General%20Universitario%20Gregorio%20Mara%C3%B1%C3%B3n!5e0!3m2!1ses!2ses!4v1620046096167!5m2!1ses!2ses" width="100%" height="100%" allowfullscreen="" loading="lazy" style={{border:0}}></iframe>
+                <div style={{ height: '100vh', width: '100%' }}>
+                    <GoogleMapReact
+                    bootstrapURLKeys={{ key: 'AIzaSyBXNl0wM-dy4MvRFRZZgUV8BczVjW7lKpM' }}
+                    defaultCenter={defaultProps.center}
+                    defaultZoom={defaultProps.zoom}
+                    >
+                    <AnyReactComponent
+                        lat={40.418936897871724}
+                        lng={-3.6716873227221694}
+                        text="My Marker"
+                    />
+                    </GoogleMapReact>
+                </div>
             </Card.Text>
             </Card.Body>
         </Card>
+        
         </>
     );
 }
 
-export default Map
+export default MapCanvas
