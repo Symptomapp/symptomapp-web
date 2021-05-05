@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Link } from 'react-router-dom';
 import "./Body.css";
 import Organ from "./Organ";
 import { getBodySymptoms } from "../../services/Apimedic/ApimedicService";
@@ -38,7 +39,6 @@ const Body = ({ organs }) => {
 
     setOrganName(name);
     setBgColor(fill);
-    console.log(symptoms);
   };
 
 
@@ -84,7 +84,7 @@ const Body = ({ organs }) => {
               {symptoms === "Select body part to display symptoms" ? (
                 <li className="list-group-item">{"symptoms"}</li>
               ) : (
-                symptoms.map((symptom, i) => <li key={symptom.ID} className="list-group-item">{symptom.Name}</li>)
+                symptoms.map((symptom, i) => <Link to={`/results/${symptom.ID}/${symptom.Name}`} key={symptom.ID} className="list-group-item"> {symptom.Name}</Link>)
               )}
             </ul>
           </div>

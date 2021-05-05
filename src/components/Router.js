@@ -20,7 +20,7 @@ export default function Router({user}) {
       <Route exact path="/profile/edit" render={(user) => <Edit user={user} />} />
       <Route exact path="/profile" render={(user) => <Profile user={user} />} />
       <Route exact path="/log-in" component={Login} />
-      <Route exact path="/results" component={Results} />
+      <Route exact path="/results/:symptomId/:symptomName" render={(props) => <Results {...props}/>} />
       <Route exact path="/search" component={Search} />
       <Route exact path="/links" component={Links} />
       <Route

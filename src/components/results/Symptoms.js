@@ -1,26 +1,16 @@
 import { React, useEffect, useState } from 'react';
 import Card from 'react-bootstrap/Card'
-import { getUserInfo } from '../../services/UserService';
 
-const Symptoms = ({user}) => {
-
-    const [state, setState] = useState({user})
-
-    useEffect(() => {
-        getUserInfo(window.localStorage.userId)
-        .then(user => setState(user))
-    }, [])
-   
+const Symptoms = ({symptomName}) => {
     return (
         <>
         <Card className="results--card">
             <Card.Header className="results---card--header">
-                <Card.Title>Symptoms</Card.Title>
+                <Card.Title>Selected symptom</Card.Title>
             </Card.Header>
             <Card.Body>
-            <Card.Text>
-                This is a wider card with supporting text below as a natural lead-in to
-                additional content. This content is a little bit longer.
+            <Card.Text className="h4 text-center">
+                {symptomName}
             </Card.Text>
             </Card.Body>
         </Card>

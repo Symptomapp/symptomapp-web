@@ -1,0 +1,5 @@
+.diagnosis__list {
+    max-height: 20vh;
+    overflow-y: auto;
+  }
+  
