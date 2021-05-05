@@ -14,13 +14,14 @@ const Diagnosis = ({ diagnosis }) => {
         </Card.Header>
         <Card.Body>
           <Card.Text>
-            <ul className="diagnosis__list">
+            <ul className="diagnosis__list list-group-flush">
               {diagnosis.length === 1 ? (
                 <li>{"Diagnosis"}</li>
               ) : (
                 diagnosis.map((d) => (
                   <li
                     key={d}
+                    className="list-group-item"
                   >
                     {" "}
                     {d}
