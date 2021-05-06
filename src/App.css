@@ -4,6 +4,7 @@ html {
 
 #root {
   background-color: #f8f1f1;
+  height: 90vh;
 }
 
 .App-logo {

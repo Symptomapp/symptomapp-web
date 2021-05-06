@@ -20,7 +20,7 @@ const Advertising = ({user}) => {
             <Card.Body>
             <Card.Text>
                 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <ins class="adsbygoogle"
+                <ins className="adsbygoogle"
                     data-ad-format="fluid"
                     data-ad-layout="in-article"
                     data-ad-client="ca-pub-0123456789101112"
