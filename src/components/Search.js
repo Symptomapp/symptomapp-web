@@ -47,7 +47,7 @@ const Search = () => {
             <tbody>
               {searchResults.map(item => (
                 <tr key={item}>
-                <td className="search--row">{item}</td>
+                <td className="search--row"><a href={item} className="search--link">{item}</a></td>
               </tr>
               ))}
             </tbody>

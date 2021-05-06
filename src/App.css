@@ -234,7 +234,7 @@ html {
     caret-color:#eb5e0b;
     transition: width 0.4s linear;
   }
-  
+
   .navigation--username {
     display: none;
   }
@@ -263,6 +263,15 @@ html {
 
 .search--row:hover{
   background-color: #a3d2ca !important;
+}
+
+.search--link {
+  color: #212529
+}
+
+.search--link:hover {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 #map {
