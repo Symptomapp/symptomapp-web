@@ -42,7 +42,7 @@ const Navigation = ({ user }) => {
               <small>
                 <i className="fas fa-user color--lightgreen"></i>
               </small>{" "}
-              {user.name}
+              <span className="navigation--username">{user.name}</span>
             </Nav.Link>
           </Nav>
         ) : (

@@ -233,6 +233,10 @@ html {
     caret-color:#eb5e0b;
     transition: width 0.4s linear;
   }
+  
+  .navigation--username {
+    display: none;
+  }
 }
 
 .searchbar:hover > .search_icon {
@@ -262,6 +266,10 @@ html {
 
 #map {
   height: 100%;
+}
+
+.marker:hover {
+  background-color: #5eaaa8;
 }
 
   @keyframes App-logo-spin {
