@@ -43,11 +43,23 @@ Medical symptom checker web app for anyone. Based on the entered symptoms it tel
 
 #### Product features
 - Sign-up and login
+<img src="https://github.com/Symptomapp/symptomapp-web/blob/master/src/SignUpLogin.gif?raw=true" />
+
 - Navigation
+<img src="https://github.com/Symptomapp/symptomapp-web/blob/master/src/Navigation.gif?raw=true" />
+
 - Profile editing and deleting
+<img src="https://github.com/Symptomapp/symptomapp-web/blob/master/src/User.gif?raw=true" />
+
 - Symptom search by list
+<img src="https://github.com/Symptomapp/symptomapp-web/blob/master/src/ListSearch.gif?raw=true" />
+
 - Symptom search by map
+<img src="https://github.com/Symptomapp/symptomapp-web/blob/master/src/BodyMap.gif?raw=true" />
+
 - Possible diseases suggestion and nearby medical centers mapping
+<img src="https://github.com/Symptomapp/symptomapp-web/blob/master/src/Results.gif?raw=true" />
+
 
 #### Authors:
 -  [Pedro J. Sola](https://github.com/pedroscampoy)
