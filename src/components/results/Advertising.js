@@ -2,7 +2,7 @@ import { React } from 'react';
 import Card from 'react-bootstrap/Card';
 import AdWords from '../../AdWords.png'
 
-const Advertising = () => {
+const Advertising = ({keywords}) => {
    
     return (
         <>

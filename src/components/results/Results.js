@@ -11,6 +11,7 @@ import Loader from '../Loader'
 
 const Results = () => {
   const [diagnosis, setDiagnosis] = useState([]);
+  const [keywords, setKeywords] = useState([]);
 
   let {symptomId, symptomName} = useParams();
 
@@ -21,12 +22,17 @@ const Results = () => {
   
   useEffect(() => {
       getDiadnosis(symptomId).then(diagnosysList => {
+          console.log(diagnosysList);
+          setKeywords(diagnosysList.map(d => d.Specialisation.map(k => k.Name)));
           setDiagnosis(diagnosysList.map(d => d.Issue.Name));
           setLoaded()
         }
       )
-      
+
   }, [symptomId]);
+
+  console.log(keywords)
+
 
   return (
     <>
@@ -35,7 +41,7 @@ const Results = () => {
       <CardDeck className="mb-5">
         <Symptoms symptomName = {symptomName}/>
         <Diagnosis diagnosis = {diagnosis}/>
-        <Advertising />
+        <Advertising keywords = {keywords}/>
         <Map />
       </CardDeck>
     </div>

@@ -14,8 +14,8 @@ const Diagnosis = ({ diagnosis }) => {
         <Card.Body>
           <Card.Text>
             <div className="diagnosis__list list-group-flush">
-              {diagnosis.length === 1 ? (
-                <p>{"Diagnosis"}</p>
+              {diagnosis.length === 0 ? (
+                <p>{"No disgnosis offered, please visit a generalist doctor"}</p>
               ) : (
                 diagnosis.map((d) => (
                   <a

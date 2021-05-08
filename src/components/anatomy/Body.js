@@ -76,7 +76,14 @@ const Body = ({ organs }) => {
             <ul className="list-group list-group-flush">
               {symptoms === "Select body part to display symptoms" ? (
                 <li className="list-group-item">{"symptoms"}</li>
-              ) : (
+              ) : ( symptoms.length === 0 ?
+                (<Link
+                    to={`/results/0/No symptom found`}
+                    className="list-group-item"
+                  >
+                    {" "}
+                    {`No symptom found for ${organName}`}
+                  </Link>) :
                 symptoms.map((symptom, i) => (
                   <Link
                     to={`/results/${symptom.ID}/${symptom.Name}`}

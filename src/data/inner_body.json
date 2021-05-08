@@ -1,6 +1,7 @@
 [{
     "id":"organ_17",
     "name": "Trachea",
+    "LocationID": 31,
     "vectorEffect":"non-scaling-stroke",
     "fill":"LightPink",
     "stroke":"#000000",
@@ -12,6 +13,7 @@
 {
     "id":"organ_16",
     "name": "Tyroid",
+    "LocationID": 28,
     "vectorEffect":"non-scaling-stroke",
     "fill":"Brown",
     "stroke":"#000000",
@@ -23,6 +25,7 @@
 {
     "id":"organ_11",
     "name": "Mayor blood vessels",
+    "LocationID": 28,
     "vectorEffect":"non-scaling-stroke",
     "fill":"Maroon",
     "stroke":"#000000",
@@ -34,6 +37,7 @@
 {
     "id":"organ_15",
     "name": "Stomach",
+    "LocationID": 36,
     "vectorEffect":"non-scaling-stroke",
     "fill":"RosyBrown",
     "stroke":"#000000",
@@ -45,6 +49,7 @@
 {
     "id":"organ_14",
     "name": "Spleen",
+    "LocationID": 36,
     "vectorEffect":"non-scaling-stroke",
     "fill":"LightSteelBlue",
     "stroke":"#000000",
@@ -56,6 +61,7 @@
 {
     "id":"organ_13",
     "name": "Small intestine",
+    "LocationID": 36,
     "vectorEffect":"non-scaling-stroke",
     "fill":"Moccasin",
     "stroke":"#000000",
@@ -67,6 +73,7 @@
 {
     "id":"organ_12",
     "name": "Pancreas",
+    "LocationID": 28,
     "vectorEffect":"non-scaling-stroke",
     "fill":"#000000",
     "stroke":"#000000",
@@ -78,6 +85,7 @@
 {
     "id":"organ_18",
     "name": "Ureters",
+    "LocationID": 38,
     "vectorEffect":"non-scaling-stroke",
     "fill":"#000000",
     "stroke":"#000000",
@@ -89,6 +97,7 @@
 {
     "id":"organ_10",
     "name": "Lungs",
+    "LocationID": 31,
     "vectorEffect":"non-scaling-stroke",
     "fill":"RosyBrown",
     "stroke":"#000000",
@@ -100,6 +109,7 @@
 {
     "id":"organ_9",
     "name": "Liver",
+    "LocationID": 28,
     "vectorEffect":"non-scaling-stroke",
     "fill":"Sienna",
     "stroke":"#000000",
@@ -111,6 +121,7 @@
 {
     "id":"organ_8",
     "name": "Larynx",
+    "LocationID": 31,
     "vectorEffect":"non-scaling-stroke",
     "fill":"LightPink",
     "stroke":"#000000",
@@ -122,6 +133,7 @@
 {
     "id":"organ_7",
     "name": "Large intestine",
+    "LocationID": 36,
     "vectorEffect":"non-scaling-stroke",
     "fill":"Burlywood",
     "stroke":"#000000",
@@ -133,6 +145,7 @@
 {
     "id":"organ_6",
     "name": "Kidneys",
+    "LocationID": 28,
     "vectorEffect":"non-scaling-stroke",
     "fill":"Firebrick",
     "stroke":"#000000",
@@ -144,6 +157,7 @@
 {
     "id":"organ_5",
     "name": "Heart",
+    "LocationID": 31,
     "vectorEffect":"non-scaling-stroke",
     "fill":"Crimson",
     "stroke":"#000000",
@@ -155,6 +169,7 @@
 {
     "id":"organ_4",
     "name": "Gallbladder",
+    "LocationID": 28,
     "vectorEffect":"non-scaling-stroke",
     "fill":"DarkOliveGreen",
     "stroke":"#000000",
@@ -166,6 +181,7 @@
 {
     "id":"organ_3",
     "name": "Diaphragm",
+    "LocationID": 28,
     "vectorEffect":"non-scaling-stroke",
     "fill":"#000000",
     "stroke":"#000000",
@@ -177,6 +193,7 @@
 {
     "id":"organ_2",
     "name": "Bladder",
+    "LocationID": 38,
     "vectorEffect":"non-scaling-stroke",
     "fill":"#000000",
     "stroke":"#000000",
@@ -188,6 +205,7 @@
 {
     "id":"organ_1",
     "name": "Appendix",
+    "LocationID": 36,
     "vectorEffect":"non-scaling-stroke",
     "fill":"000000",
     "stroke":"#000000",
