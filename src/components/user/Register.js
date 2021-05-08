@@ -93,7 +93,10 @@ const Register = () => {
 
                 <Form.Group controlId="formGridPicture">
                     <Form.Label>Picture</Form.Label>
-                    <Form.Control type="url" placeholder="http://www..." name="picture" value={data.picture} onChange={handleChange} autoComplete="photo"/>
+                    <Form.Control as="select" name="picture" onChange={handleChange} autoComplete="photo" required>
+                        <option></option>
+                        <option>https://miro.medium.com/max/3150/1*NFwzjjur2atssvIlGia0AQ.jpeg</option>
+                    </Form.Control>
                 </Form.Group>
 
                 <Form.Row>
@@ -114,13 +117,21 @@ const Register = () => {
 
                     <Form.Group as={Col} controlId="formGridCity">
                     <Form.Label>City</Form.Label>
-                    <Form.Control type="text" placeholder="Your city" name="city" value={data.city} onChange={handleChange} autoComplete="address-level2" required/>
+                    <Form.Control as="select" name="city" onChange={handleChange} autoComplete="address-level2" required>
+                        <option></option>
+                        <option>Madrid</option>
+                    </Form.Control>
                     </Form.Group>
                 </Form.Row>
 
                 <Button className="button--primary" type="submit">
                     Submit
                 </Button>
+                <Link to="/">
+                        <Button className="button--secondary ml-3" type="">
+                            Go back
+                        </Button>
+                    </Link>
                 </Form>
         }
 

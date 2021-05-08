@@ -15,7 +15,7 @@ const [state, setState] = useState()
                 setState(r.data[0].shortdef.toString())
         }})
         .catch(setState(null))
-    }, [])
+    }, [symptomName])
 
     return (
         <>
@@ -26,7 +26,7 @@ const [state, setState] = useState()
             <Card.Body>
             <Card.Text className="ext-center">
                 <h1 className="mb-3">{symptomName}:</h1>
-                <p className="font-weight-light font-italic">{state ? <span>{state}.</span> : ''}</p>
+                <p className="font-weight-light font-italic">{state ? <span>{state}.</span> : 'No exact definition found.'}</p>
             </Card.Text>
             </Card.Body>
         </Card>

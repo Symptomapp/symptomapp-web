@@ -158,10 +158,13 @@ html {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  z-index: 999;
 }
 
 .jumbotron {
   background-color: #f8f1f1 !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 10px !important;
 }
 
 .profile--card {
@@ -180,6 +183,18 @@ html {
 .card--link {
   opacity: 0.8;
   border: 1px solid #5eaaa8 !important;
+}
+
+.links--container {
+  padding-bottom: 2%;
+}
+
+@media only screen and (min-width: 550px) {
+  .links--container {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 2%;
+  }
 }
 
 .card--link:hover {
@@ -257,6 +272,16 @@ html {
   text-decoration:none;
 }
 
+.search--table {
+  margin-bottom: 7% !important;
+}
+
+@media only screen and (max-width: 550px) {
+  .search--table {
+    margin-bottom: 20% !important;
+  }
+}
+
 .search--row {
   border: 1px solid #5eaaa8 !important;
 }
@@ -290,3 +315,36 @@ html {
       transform: rotate(360deg);
     }
   }
+
+.diagnosis--link {
+  color: #5eaaa8
+}
+
+.diagnosis--link:hover {
+  color: #eb5e0b;
+  text-decoration: none;
+  background-color: #f8f1f1;
+}
+
+.advertising--card {
+  display: block;
+  position: relative;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.advertising--card::after {
+  content: "";
+  background-size: 80% 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Ads_logo.svg/960px-Google_Ads_logo.svg.png');
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}

@@ -5,10 +5,16 @@ import { Link } from "react-router-dom";
 import logo from "../logo.svg";
 import { setDemoToken } from '../store/AccessTokenStore';
 import { getUserInfo } from '../services/UserService';
+import Loader from './Loader'
+
 
 const Home = ({ user }) => {  
 
   const [state, setState] = useState({user})
+
+  const [loading, setLoading] = useState(true);
+
+  const setLoaded = () => setLoading(false);
   
   const setDemoUser = () => {
     setDemoToken()
@@ -16,11 +22,16 @@ const Home = ({ user }) => {
 
   useEffect(() => {
         getUserInfo(window.localStorage.userId)
-        .then(user => setState(user))
+        .then(user => {
+            setState(user);
+            setLoaded()
+            }
+        )
     }, [])
 
   return (
     <>
+    { (loading) ? (<Loader />) : ('') }
     { state._id ? (<Menu />) :
     (<div className="Home">
             <header className="App-header pb-5">

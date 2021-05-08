@@ -40,7 +40,7 @@ const Navigation = ({ user }) => {
             </Nav.Link>
             <Nav.Link className="navigation--link" href="/profile">
               <small>
-                <i className="fas fa-user color--lightgreen"></i>
+                <i className="fas fa-user color--orange"></i>
               </small>{" "}
               <span className="navigation--username">{user.name}</span>
             </Nav.Link>

@@ -93,6 +93,11 @@ const Login = ({ doLogin }) => {
                     <Button className="button--primary" type="submit">
                         Submit
                     </Button>
+                    <Link to="/">
+                        <Button className="button--secondary ml-3" type="">
+                            Go back
+                        </Button>
+                    </Link>
             </Form>
 
         </div>

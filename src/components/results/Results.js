@@ -5,27 +5,33 @@ import Diagnosis from "./Diagnosis";
 import Advertising from "./Advertising";
 import Map from "./Map";
 import CardDeck from "react-bootstrap/CardDeck";
-import { getUserInfo } from "../../services/UserService";
 import { getDiadnosis } from "../../services/Apimedic/ApimedicService";
+import Loader from '../Loader'
 
-const Results = ({ user }) => {
-  const [currentUser, setCurrentUser] = useState({ user });
+
+const Results = () => {
   const [diagnosis, setDiagnosis] = useState([]);
 
   let {symptomId, symptomName} = useParams();
 
+  const [loading, setLoading] = useState(true);
+
+  const setLoaded = () => setLoading(false);
+
   
   useEffect(() => {
-      getUserInfo(window.localStorage.userId).then((user) =>
-      setCurrentUser(user)
-      );
+      getDiadnosis(symptomId).then(diagnosysList => {
+          setDiagnosis(diagnosysList.map(d => d.Issue.Name));
+          setLoaded()
+        }
+      )
       
-      getDiadnosis(symptomId).then(diagnosysList =>  setDiagnosis(diagnosysList.map(d => d.Issue.Name)))
-      
-  }, []);
+  }, [symptomId]);
 
   return (
-    <div className="container m-3 mx-auto">
+    <>
+    { (loading) ? (<Loader />) : ('') }
+    <div className="container mt-3 mb-5 pb-4 mx-auto">
       <CardDeck className="mb-5">
         <Symptoms symptomName = {symptomName}/>
         <Diagnosis diagnosis = {diagnosis}/>
@@ -33,6 +39,7 @@ const Results = ({ user }) => {
         <Map />
       </CardDeck>
     </div>
+    </>
   );
 };
 

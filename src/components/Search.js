@@ -5,7 +5,7 @@ import Table from 'react-bootstrap/Table'
 import symptoms_json from '../data/symptoms.json'
 
 const symptoms = symptoms_json.map(symptom => {
-    return symptom.Name
+    return {name: symptom.Name, id: symptom.ID}
 });
 
 const Search = () => {
@@ -15,13 +15,15 @@ const Search = () => {
     const handleChange = event => {
         setSearchTerm(event.target.value);
     };
- 
+
     useEffect(() => {
-        const results = symptoms.filter(person =>
-        person.toLowerCase().includes(searchTerm)
-        );
-        setSearchResults(results);
-    }, [searchTerm]);
+      const results = symptoms.filter(function (el) {
+        return el.name.toLowerCase().includes(searchTerm);
+      });
+      setSearchResults(results);
+    }, [searchTerm]
+
+    )
 
   return (
     <>
@@ -43,11 +45,11 @@ const Search = () => {
             <div className="search_icon"><i className="fas fa-search"></i></div>
             </div>
           </div>
-          <Table>
+          <Table className="search--table">
             <tbody>
               {searchResults.map(item => (
-                <tr key={item}>
-                <td className="search--row"><a href={item} className="search--link">{item}</a></td>
+                <tr key={item.name}>
+                <td className="search--row"><a href={"/results/"+item.id+"/"+item.name} className="search--link">{item.name}</a></td>
               </tr>
               ))}
             </tbody>

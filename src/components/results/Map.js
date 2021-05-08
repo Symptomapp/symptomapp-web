@@ -1,4 +1,4 @@
-import { React, useEffect, useState } from 'react';
+import { React } from 'react';
 import Card from 'react-bootstrap/Card';
 import GoogleMapReact from 'google-map-react';
 import MapMarker from './MapMarker'
@@ -20,6 +20,7 @@ const MapCanvas = () => {
             lng={element.location.longitude}
             title={element.title}
             link={element.relation}
+            key={element.title}
         />
     )
 
@@ -49,13 +50,3 @@ const MapCanvas = () => {
 }
 
 export default MapCanvas
-
-
-// { data.forEach(element => 
-//                         <MapMarker
-//                             lat={element.location.latitude}
-//                             lng={element.location.longitude}
-//                             title={element.title}
-//                             link={element.relation}
-//                         />
-//                     )}

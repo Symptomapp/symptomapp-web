@@ -1,15 +1,8 @@
-import { React, useEffect, useState } from 'react';
+import { React } from 'react';
 import Card from 'react-bootstrap/Card';
-import { getUserInfo } from '../../services/UserService';
+import AdWords from '../../AdWords.png'
 
-const Advertising = ({user}) => {
-
-    const [state, setState] = useState({user})
-
-    useEffect(() => {
-        getUserInfo(window.localStorage.userId)
-        .then(user => setState(user))
-    }, [])
+const Advertising = () => {
    
     return (
         <>
@@ -17,7 +10,7 @@ const Advertising = ({user}) => {
             <Card.Header className="results---card--header">
                 <Card.Title>Advertising</Card.Title>
             </Card.Header>
-            <Card.Body>
+            <Card.Body className="advertising--card">
             <Card.Text>
                 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 <ins className="adsbygoogle"
@@ -28,7 +21,7 @@ const Advertising = ({user}) => {
                 <script>
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Ads_logo.svg/960px-Google_Ads_logo.svg.png" width="100%" height="100%" style={{opacity:0.25}} />
+                <img src={AdWords} width="100%" alt="AdWords logo"/>
             </Card.Text>
             </Card.Body>
         </Card>

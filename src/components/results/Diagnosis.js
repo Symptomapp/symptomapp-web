@@ -1,10 +1,9 @@
-import { React, useEffect, useState } from "react";
+import { React } from "react";
 import "./Diagnosis.css";
 import Card from "react-bootstrap/Card";
-import { getUserInfo } from "../../services/UserService";
 
 const Diagnosis = ({ diagnosis }) => {
-  console.log(diagnosis);
+  const url = 'https://www.google.com/search?q=';
 
   return (
     <>
@@ -14,21 +13,24 @@ const Diagnosis = ({ diagnosis }) => {
         </Card.Header>
         <Card.Body>
           <Card.Text>
-            <ul className="diagnosis__list list-group-flush">
+            <div className="diagnosis__list list-group-flush">
               {diagnosis.length === 1 ? (
-                <li>{"Diagnosis"}</li>
+                <p>{"Diagnosis"}</p>
               ) : (
                 diagnosis.map((d) => (
-                  <li
+                  <a
                     key={d}
-                    className="list-group-item"
+                    className="list-group-item diagnosis--link h5"
+                    href={url+d}
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     {" "}
                     {d}
-                  </li>
+                  </a>
                 ))
               )}
-            </ul>
+            </div>
           </Card.Text>
         </Card.Body>
       </Card>

@@ -18,6 +18,7 @@ const Links = () => {
                 <p>You can find more information in the following links:</p>
             </Container>
         </Jumbotron>
+        <div className="links--container">
         <CardColumns className="mx-4 mb-5">
             <Card className="p-3 card--link">
                 <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2018/07/15/10/44/dna-3539309_960_720.jpg" />
@@ -110,6 +111,7 @@ const Links = () => {
                 </Card.Body>
             </Card>
             </CardColumns>
+            </div>
         </>
     );
 }
