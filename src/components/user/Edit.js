@@ -104,10 +104,9 @@ const Edit = () => {
                     <Form.Control type="text" placeholder="Your city" name="city" value={user.city} onChange={handleChange} autoComplete="address-level2" required/>
                     </Form.Group>
                 </Form.Row>
-
-                <Button className="button--primary" type="submit">
-                    Submit
-                </Button>
+                
+                { (user._id !== '608b059bb0c5e03328725385') ? (<Button className="button--primary" type="submit">Submit</Button>) : (<Button className="button--secondary">Not allowed to edit</Button>) }
+          
                 </Form>
         }
 

@@ -1,0 +1,7 @@
+{
+    "name": "symptomapp",
+    "integrations": {
+      "capacitor": {}
+    },
+    "type": "react"
+  }

@@ -1,0 +1,8 @@
+{
+    "appId": "io.ionic.symptomapp",
+    "appName": "symptomapp",
+    "bundledWebRuntime": false,
+    "npmClient": "npm",
+    "webDir": "build",
+    "cordova": {}
+  }
