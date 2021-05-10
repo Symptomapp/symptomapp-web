@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">symptomapp</string>
+    <string name="title_activity_main">symptomapp</string>
+    <string name="package_name">io.ionic.symptomapp</string>
+    <string name="custom_url_scheme">io.ionic.symptomapp</string>
+</resources>

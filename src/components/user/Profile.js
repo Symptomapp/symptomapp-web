@@ -79,7 +79,7 @@ const Profile = ({user}) => {
                 <Button className="button--primary" onClick={handleClose}>
                     Cancel
                 </Button>
-                <Button className="button--secondary" onClick={handleDelete}>Delete profile</Button>
+                { (state._id !== '608b059bb0c5e03328725385') ? (<Button className="button--secondary" onClick={handleDelete}>Delete profile</Button>) : (<Button className="button--secondary">Not allowed to delete</Button>) }
                 </Modal.Footer>
             </Modal>
         </div>
